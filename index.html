@@ -29,13 +29,13 @@
 
     <div class="header">
 
-        <h1>Weakly Supervised Semantic Segmentation Based on Co-segmentation</h1>
+        <h1>Weakly Supervised Semantic Segmentation Based on Web Image Co-segmentation</h1>
         <h2>Tong Shen, Guosheng Lin, Lingqiao Liu, Chunhua Shen, Ian Reid</h2>
 
     </div>
     <div class="content">
         <h2>Abstract</h2>
-        <p>Training a Fully Convolutional Network (FCN) for semantic segmentation requires a large number of pixel-level masks, which involves a large amount of human labour and time for annotation. In contrast, image-level labels are much easier to obtain. In this work, we propose a novel method for weakly supervised semantic segmentation with only image-level labels. The method relies on a large scale co-segmentation framework that can produce object masks for a group of images containing objects belonging to the same semantic class. We first retrieve images from search engines, e.g. Flickr and Google, using semantic class names as queries, e.g. class names in PASCAL VOC 2012. We then use high quality masks produced by co-segmentation on the retrieved images as well as the target dataset images with image level labels to train segmentation networks. We obtain IoU 56.9 on test set of PASCAL VOC 2012, which reaches state of the art performance.</p>
+        <p>Training a Fully Convolutional Network (FCN) for semantic segmentation requires a large number of masks with pixel level labelling, which involves a large amount of human labour and time for annotation. In contrast, web images and their image-level labels are much easier and cheaper to obtain. In this work, we propose a novel method for weakly supervised semantic segmentation with only image-level labels. The method utilizes the internet to retrieve a large number of images and uses a large scale co-segmentation framework to generate masks for the retrieved images. We first retrieve images from search engines, e.g. Flickr and Google, using semantic class names as queries, e.g. class names in the dataset PASCAL VOC 2012. We then use high quality masks produced by co-segmentation on the retrieved images as well as the target dataset images with image level labels to train segmentation networks. We obtain an IoU score of 56.9 on test set of PASCAL VOC 2012, which reaches the state-of-the-art performance.</p>
         <center><img src="pipeline.pdf" alt="Mountain View" align="middle" style="width:600px"></center>
 
         <h2>Paper</h2>
